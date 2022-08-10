@@ -1,0 +1,26 @@
+<h2>Bienvenido a Merca Merca!</h2>
+<div class="row">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Gramaje</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dapro of dataProduct">
+        <td>{{dapro.nombre}}</td>
+        <td>{{dapro.gramaje}}</td>
+        <td>{{dapro.valor}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Nombre</th>
+        <th>Gramaje</th>
+        <th>Valor</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
